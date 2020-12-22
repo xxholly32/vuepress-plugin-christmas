@@ -37,7 +37,7 @@
   @include border-radius(50%);
   @include background-image(linear-gradient(#0c1d38, #1a3158));
 
-  position: absolute;
+  position: fixed;
   bottom: 4rem;
   right: 2.5rem;
   width: 182px;
