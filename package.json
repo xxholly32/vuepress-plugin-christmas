@@ -1,0 +1,21 @@
+{
+  "name": "vuepress-plugin-christmas",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "authors": {
+    "name": "xiangxiao",
+    "email": "xxholly32@163.com"
+  },
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "compass-sass-mixins": "^0.12.7",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "vuepress": "^1.5.3"
+  }
+}
