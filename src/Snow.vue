@@ -1,8 +1,8 @@
 <template>
   <div
     class="christmas-room"
-    :class="[snowDrop ? 'drop-snow' : '']"
-    @click="snowDrop = !snowDrop"
+    :class="[snowDrop === DROP ? 'drop-snow' : '']"
+    @click="snowDrop = snowDrop === DROP ? NORMAL : DROP"
   >
     <div class="flake large f-1"></div>
     <div class="flake large f-2"></div>
@@ -45,28 +45,37 @@
   </div>
 </template>
 <script>
+const DROP = "yes";
+const NORMAL = "no";
 export default {
   data() {
     return {
-      snowDrop: false,
+      DROP,
+      NORMAL,
+      snowDrop: DROP,
       mask: null,
     };
   },
   watch: {
     snowDrop(val) {
-      if (val) {
+      if (val === DROP) {
         this.addSnow();
+        localStorage.setItem("snowDrop", DROP);
       } else {
         this.removeSnow();
+        localStorage.setItem("snowDrop", NORMAL);
       }
     },
   },
-  mounted() {},
+  mounted() {
+    this.mask = document.createElement("div");
+    document.body.prepend(this.mask);
+    this.snowDrop = localStorage.getItem("snowDrop");
+    this.snowDrop === DROP && this.addSnow();
+  },
   methods: {
     addSnow() {
       document.body.classList.add("christmas");
-      this.mask = document.createElement("div");
-      document.body.prepend(this.mask);
       this.mask.innerHTML = new Array(50)
         .fill('<div class="snow"></div>')
         .join("");
@@ -78,3 +87,8 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+@import "./style/tree.scss";
+@import "./style/index.scss";
+</style>

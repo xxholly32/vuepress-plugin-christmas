@@ -9,11 +9,14 @@
   },
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
   },
   "license": "MIT",
+  "dependencies": {
+    "compass-sass-mixins": "^0.12.7"
+  },
   "devDependencies": {
-    "compass-sass-mixins": "^0.12.7",
     "sass": "^1.30.0",
     "sass-loader": "^10.1.0",
     "vuepress": "^1.5.3"

@@ -2,10 +2,11 @@ const { description } = require("../../package");
 const path = require("path");
 
 module.exports = {
+  base: "/vuepress-plugin-christmas/",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: "Vuepress Docs Boilerplate",
+  title: "vuepress-plugin-christmas",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -44,12 +45,8 @@ module.exports = {
         link: "/guide/",
       },
       {
-        text: "Config",
-        link: "/config/",
-      },
-      {
-        text: "VuePress",
-        link: "https://v1.vuepress.vuejs.org",
+        text: "github",
+        link: "https://github.com/xxholly32/vuepress-plugin-christmas",
       },
     ],
     sidebar: {
@@ -57,7 +54,7 @@ module.exports = {
         {
           title: "Guide",
           collapsable: false,
-          children: ["", "using-vue"],
+          children: [""],
         },
       ],
     },
