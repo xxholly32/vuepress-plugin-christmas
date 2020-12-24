@@ -1,8 +1,9 @@
 .christmas {
-  // height: 100vh;
+  min-height: 100vh;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow-y: auto;
   overflow-x: hidden;
+  cursor: pointer;
   filter: drop-shadow(0 0 10px white);
   color: #fff;
 }

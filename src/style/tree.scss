@@ -40,18 +40,19 @@
   position: fixed;
   bottom: 4rem;
   right: 2.5rem;
-  width: 182px;
-  height: 182px;
+  width: 140px;
+  height: 140px;
 
   margin: 50px auto;
   overflow: hidden;
+  cursor: pointer;
 
   .ground {
     @include border-top-right-radius(130px 40px);
 
     position: absolute;
     width: 133px;
-    height: 61px;
+    height: 53px;
 
     left: 0;
     bottom: 0;
