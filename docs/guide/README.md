@@ -4,6 +4,9 @@
 
 > 圣诞节快乐 🎄
 
+![image](https://user-images.githubusercontent.com/6063358/103071375-6dbc5180-45fe-11eb-9a55-b2124981ac12.png)
+
+
 ## 安装
 
 ```bash
