@@ -1,6 +1,8 @@
 # 介绍
 
-这个是 vuepress 的圣诞插件，idea 来源于 codepan <https://codepen.io/kevinjannis/pen/Krids> 以及 <https://codepen.io/xxholly32/details/XWjambb>
+这个是 vuepress 的圣诞插件，idea 来源于 <https://codepen.io/kevinjannis/pen/Krids> 以及 <https://codepen.io/xxholly32/details/XWjambb>
+
+> 圣诞节快乐 🎄
 
 ## 安装
 
