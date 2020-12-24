@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/xxholly32/vuepress-plugin-christmas/compare/v0.0.5...v0.0.6) (2020-12-24)
+
+
+### Bug Fixes
+
+* 🐛 control tree position in the bottom ([0795514](https://github.com/xxholly32/vuepress-plugin-christmas/commit/07955148c2acc433831dd32756a7fb39b7c9b5b6))
+
 ### [0.0.5](https://github.com/xxholly32/vuepress-plugin-christmas/compare/v0.0.4...v0.0.5) (2020-12-24)
 
 
